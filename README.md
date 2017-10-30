@@ -1,4 +1,4 @@
-# NBB Map Board 
+# NNB Map Board 
 
 Restful API using Flask <br>
 Dependencies:

@@ -12,5 +12,12 @@ def index():
 # this doesnt work 
 @app.route('/name')
 def name():
-    return PointsOfInterest.query.filter_by(id=id)
+    result = PointsOfInterest(
+            name="aria"
+    )
+    mod.add(result)
+    return"HI"
+    mod.add(result)
+    db.session.commit()
+
 

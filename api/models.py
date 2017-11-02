@@ -1,8 +1,21 @@
-from app import db
+
 from sqlalchemy.dialects.postgresql import JSON
 from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
-db = SQLAlchemy()
+
+app = Flask(__name__)
+app.config.from_object('config')
+db = SQLAlchemy(app)
+
+# import and register blueprints
+# from api.views import main
+# app.register_blueprint(main.mod)
+
+# db = SQLAlchemy()
 
 # this doesn't work 
 class PointsOfInterest(db.Model):

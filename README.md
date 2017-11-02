@@ -8,7 +8,7 @@ Dependencies:
 
 ## Setup 
 If your developing with Windows, ¯\_(ツ)_/¯ <br>
-Always remember to be use the same virtual environement. This is a really good practice for any python development. <br>
+Always remember to use the same virtual environement. This is really good practice for any python development. <br>
 First, install virtualenv, create and activate the environment called **venv**, and install the python package dependencies:
 ```bash
 pip3 install virtualenv

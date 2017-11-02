@@ -13,7 +13,7 @@ def index():
 @app.route('/name')
 def name():
     result = PointsOfInterest(
-            name="aria"
+        name="aria"
     )
     mod.add(result)
     return"HI"

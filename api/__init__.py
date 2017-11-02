@@ -10,6 +10,9 @@ db = SQLAlchemy(app)
 from api.views import main
 app.register_blueprint(main.mod)
 
+from api.views import years
+app.register_blueprint(years.mod)
+
 @app.route('/name2/<input>')
 def name2(input):
     result = PointsOfInterest(
@@ -21,7 +24,7 @@ def name2(input):
 
 @app.route('/getall')
 def getall():
-    
+
     PointsOfInterest.query.all()
     return"HI"
     

@@ -4,10 +4,24 @@ Restful API using Flask <br>
 Dependencies:
 - Python 3.x
 - pip 9.0
-- PostgreSQL – for MacOS, [postgresapp](http://postgresapp.com/) is a very simple one. <br> or ```brew install postgresql```
+- PostgreSQL 
 
 ## Setup 
 If your developing with Windows, ¯\_(ツ)_/¯ <br>
+To install Postgres with Homebrew([postgresapp](http://postgresapp.com/) also works):
+```
+$ brew install postgresql
+$ brew link postgresql
+```
+This should start your postgres server(Ctrl-C to stop):
+```
+$ postgres -D /usr/local/var/postgres
+```
+On a separate CLI:
+```
+$ createdb
+$ psql -h localhost
+```
 Always remember to use the same virtual environement. This is really good practice for any python development. <br>
 First, install virtualenv, create and activate the environment called **venv**, and install the python package dependencies:
 ```bash

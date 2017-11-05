@@ -13,6 +13,12 @@ app.register_blueprint(main.mod)
 from api.views import years
 app.register_blueprint(years.mod)
 
+from api.views import stories
+app.register_blueprint(stories.mod)
+
+from api.views import POIS
+app.register_blueprint(POIS.mod)
+
 @app.route('/name2/<input>')
 def name2(input):
     result = PointsOfInterest(

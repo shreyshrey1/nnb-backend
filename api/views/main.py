@@ -6,8 +6,8 @@ mod = Blueprint('main', __name__)
 
 
 @app.route('/')
-def index():
-    return '<h1>Hello World!</h1>'
+def mainpage():
+    return '<h1>NNB Home Page</h1>'
 
 # this doesnt work 
 @app.route('/name')

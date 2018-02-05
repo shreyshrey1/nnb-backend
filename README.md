@@ -1,4 +1,4 @@
-# NNB Map Board 
+# NNB Map Board - NOT UPDATED, GO TO HACK4IMPACT-UIUC FOR UPDATED APPLICATION
 
 Restful API using Flask <br>
 Dependencies:
